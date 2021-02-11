@@ -6,11 +6,13 @@ const app = express();
 
 app.use(bodyParser.urlencoded({ extended: false }));
 
+//Creating Server
 app.listen(3000, () => {
   console.log("server started running : 3000");
 });
 
 app.get("/", (req, res) => {
+  //Give your absolute path according to your system
   res.sendFile("C:/Users/Sandeep/Desktop/SANCHECK/index.html");
 });
 
